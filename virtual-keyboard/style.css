@@ -1,0 +1,56 @@
+.area {
+    position: absolute;
+    width: 800px;
+    top: 130px;
+    right: 350px;
+}
+.keyboard {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 5px 0;
+    background: rgb(164, 83, 83);
+    transition: bottom 0.3s;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+.keyboard-inactive {
+    bottom: -100%;
+}
+.keys {
+    text-align: center;
+}
+.key {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    height: 45px;
+    width: 5%;
+    max-width: 80px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.05rem;
+    -webkit-tap-highlight-color: transparent;
+}
+.key-active {
+    background: rgb(41, 161, 172);
+}
+.key:active {
+    background: rgb(41, 161, 172);
+}
+.key-backspace {
+    width: 12%;
+}
+.key-space {
+    width: 36%;
+    max-width: 500px;
+}
